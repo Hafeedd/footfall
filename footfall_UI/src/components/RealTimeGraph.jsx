@@ -97,8 +97,18 @@ export const RealTimeGraph = () => {
             maintainAspectRatio: false,
             scales: {
               y: {
+                title: {
+                  display: true,
+                  text: "COUNT",
+                },
                 beginAtZero: true,
                 min: 0,
+              },
+              x: {
+                title: {
+                  display: true,
+                  text: "Time (Minutes)",
+                },
               },
             },
             responsive: true,
