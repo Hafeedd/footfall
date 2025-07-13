@@ -192,7 +192,7 @@ export const getRealTimeFootfall = async (req, res, next) => {
       data: {
         hour: dayjs(now).format("HH:mm"),
         label: labels,
-        data: data.reverse(),
+        data: data,
       },
     });
   } catch (error) {
